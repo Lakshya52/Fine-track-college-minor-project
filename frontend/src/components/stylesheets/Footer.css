@@ -1,0 +1,9 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background-color: whitesmoke;
+    /* color: white; */
+    /* padding: 10px; */
+    height: 4vh;
+}

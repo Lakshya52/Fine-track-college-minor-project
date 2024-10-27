@@ -1,0 +1,121 @@
+.dash-top-indicators {
+  width: 30%;
+  /* height: 100px; */
+  height: fit-content;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 121, 36, 0.233);
+  
+}
+#dash-top-panels{
+  margin-top: 30px;
+}
+#amounts-container {
+  display: flex;
+  justify-content: space-between;
+}
+.dti-amount{
+  font-size: 2rem;
+}
+#dash-hero{
+  justify-content: space-between;
+}
+#dash-hero #pie-chart,#dash-hero img{
+  height: 35vw;
+  width: 35vw;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px 10px rgba(0, 121, 36, 0.11);
+  /* border: 1px solid black; */
+}
+
+#recent-transactions{
+  width: 98%;
+  height: 35vw;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+  padding: 10px;
+  border-radius: 5px;
+  /* box-shadow: 0px 0px 10px 10px rgba(0, 121, 36, 0.11); */
+  border: 1px solid rgba(0, 121, 36, 0.233);
+
+}
+
+
+
+/* expense pages css......................... */
+.expense-list{
+  margin-top: 30px;
+  width: 100%;
+  font-size: 1.2rem;
+}
+.expense-item{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  margin-bottom: 5px;
+  background-color: rgb(228, 228, 228);
+}
+.allTransactions-right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}
+.allTransactions-right button{
+  background-color: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.allTransactions-right button:hover img{
+  /* height: 35px; */
+  transform: scale(1.2);
+}
+
+
+/* add transactions page css here ........................ */
+
+.addrecord-form{
+  width: 100%;
+}
+.container{
+  margin-top: 30px;
+  width: 100%;
+  /* background-color: red; */
+}
+
+
+.create-trans-divs{
+  width: 95%;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: rgba(0, 121, 36, 0.233);
+
+}
+.create-trans-divs input{
+  border: none;
+  /* outline: none; */
+}
+.create-trans-divs textarea, .create-trans-divs input{
+  width: 97%;
+  padding: 10px;
+
+}
+.create-trans-divs button{
+  width: 99%;
+  padding: 10px;
+  color: white;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.664);
+  transition: 0.2s ease;
+}
+.create-trans-divs button:hover{
+  background-color:black;
+  border-radius: 50px;
+}
+

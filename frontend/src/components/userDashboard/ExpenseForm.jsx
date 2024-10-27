@@ -8,6 +8,7 @@ function ExpenseForm({ addTransaction }) {
   const [expenseInfo, setExpenseInfo] = useState({
     amount: "",
     text: "",
+    date: today,
   });
 
   const handleChange = (e) => {
@@ -19,13 +20,13 @@ function ExpenseForm({ addTransaction }) {
 
   const addExpenses = (e) => {
     e.preventDefault();
-    const { amount, text } = expenseInfo;
+    const { amount, text, date } = expenseInfo;
     if (!amount || !text) {
       handleError("Please add transaction Details");
       return;
     }
     addTransaction(expenseInfo);
-    setExpenseInfo({ amount: "", text: "" });
+    setExpenseInfo({ amount: "", text: "", date: today });
   };
 
   return (
@@ -35,7 +36,7 @@ function ExpenseForm({ addTransaction }) {
           <label htmlFor="date"> <h2>  
           Date (optional) :
             </h2></label> <br /> 
-          <input type="date" defaultValue={today} />
+          <input type="date" name="date" onChange={handleChange}  defaultValue={today} />
         </div>
         <div className="create-trans-divs">
           <label htmlFor="text"> <h2>  
